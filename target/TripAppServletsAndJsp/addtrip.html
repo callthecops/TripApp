@@ -1,0 +1,40 @@
+    <html>
+    <head>
+        <title>Add a trip</title>
+        <meta charset = "UTF-8" />
+    </head>
+    <body>
+    <h1>Add a trip ${username}</h1>
+    <form method="POST" action="AddTripServlet" enctype="multipart/form-data">
+        <label for="tripname">Trip name</label>
+        <input type="text" name="tripname" id="tripname" required/>
+        <br>
+        <label for="startdate">Start date</label>
+        <input type="date" name="startdate" id="startdate" required/>
+        <br>
+        <label for="enddate">End date</label>
+        <input type="date" name="enddate" id="enddate" required/>
+        <br>
+        <label for="impressions">Impressions</label>
+        <textarea name="impressions" id="impressions" rows="5" cols="30">Add your impressions here</textarea>
+        <br>
+        <label for="photoone">Add first photo</label>
+        <input type="file" id="photoone" name="photoone" required/>
+        <br>
+        <label for="phototwo">Add second photo</label>
+        <input type="file" id="phototwo" name="phototwo" required/>
+        <br>
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" required/>
+        <br><br>
+        <input type="SUBMIT" value="Add trip">
+
+        <div id="map">
+            <p>Potential google map location if i can implement it</p>
+        </div>
+
+    </form>
+
+    </body>
+
+    </html>

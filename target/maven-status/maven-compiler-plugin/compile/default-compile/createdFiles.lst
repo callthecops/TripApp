@@ -1,0 +1,13 @@
+com\example\web\PhotosServlet.class
+com\example\web\UpdateDeleteTripServlet.class
+com\example\web\AddTripServlet.class
+com\example\web\MainMenuServlet.class
+com\example\web\LoginServlet.class
+com\example\utils\Query.class
+com\example\web\LogoutServlet.class
+com\example\web\UpdateProfileServlet.class
+com\example\utils\Utils.class
+com\example\web\ProfileServlet.class
+com\example\model\User.class
+com\example\utils\DatabaseConnection.class
+com\example\web\UpdateTripServlet.class

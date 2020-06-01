@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+
+    </style>
+</head>
+<body>
+<h3>My Google Maps Demo</h3>
+<!--The div element for the map -->
+<div id="map"></div>
+<label for="location">Add location</label>
+<input type="text" name="textfield" id="location">
+<input type="button" id="locationbutton" value="changelocation" onclick="addLocation()">
+<script>
+
+function addLocation() {
+ let inputVal=document.getElementById("location").value;
+ return inputVal;
+}
+
+function refreshMapWithLocation(inputVal){
+// refreshes the map with new coords??
+}
+
+// Initialize and add the map
+
+function initMap() {
+
+  let adelaide = {lat: -34.9285, lng: 138.6007};
+
+  let map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: adelaide});
+
+  let marker = new google.maps.Marker({position: adelaide, map: map});
+}
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG-0ifKltlQpz6QriCmdBEGXGgNT5F6JE&callback=initMap"
+        async defer></script>
+</body>
+</html>

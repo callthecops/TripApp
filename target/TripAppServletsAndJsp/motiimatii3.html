@@ -1,0 +1,46 @@
+<html>
+
+
+
+
+
+<body>
+
+
+<div id="wrapper" class="wrapper">
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">My App</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <h1>Material Menu</h1>
+                <div id="github-icons"></div>
+
+
+
+                <c:if test="${!updateSuccess.equals(null)}">
+                        <h3>${updateSuccess}</h3>
+                </c:if>
+                <br>
+                <c:choose>
+                    <c:when test ="${trips.isEmpty()}">
+                        <p>Please enter some trips to view them</p>
+                        <br>
+                    </c:when>
+                    <c:otherwise>
+
+
+                    </c:otherwise>
+                </c:choose>
+
+            </section>
+
+
+
+
+
+</body>
+</html>
